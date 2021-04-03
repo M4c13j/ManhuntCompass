@@ -20,23 +20,20 @@ A hub for the game. `start` gives every hunter _Manhunt Compass_ and start the g
 ```
 ### Hunter
 Everything realted to **hunters**. Hunters have to kill all runners in order to win the game.
-```
-/hunter - add a player executing that command to hunters
-/hunter add <player> - add <player> to hunters
-/hunter remove <player> - remove <player> from hunters
-/hunter clear - remove all hunters
-/hunter list - returns nicks of hunters
-```
+
+- `/hunter` - add a player executing that command to hunters
+- `/hunter add <player>` - add <player> to hunters
+- `/hunter remove <player>` - remove <player> from hunters
+- `/hunter clear` - remove all hunters
+- `/hunter list` - returns nicks of hunters
 ### Runner
 Everything related to **runners**. Runners have to survive and kill ender dragon but you can choose whatever objective you want.
-```aidl
-/runner - add a player executing that command to runners
-/runner add <player> - add <player> to runners
-/runner remove <player> - remove <player> from runners
-/runner clear - remove all players from runners
-/runner list - returns nicks of runners
-```
+-`/hunter` - add a player executing that command to runners
+- `/runner add <player>` - add <player> to runners
+- `/runner remove <player>` - remove <player> from runners
+- `/runner clear` - remove all players from runners
+- `/runner list` - returns nicks of runners
 ##### In progress
--[ ] Dragon death detection
--[ ] Toggle compass in nether
--[ ] Auto end game when all runners die
+- [ ] Dragon death detection
+- [ ] Toggle compass in nether
+- [ ] Auto end game when all runners die
