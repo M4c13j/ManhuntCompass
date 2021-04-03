@@ -7,13 +7,14 @@ Copy `Manhunt_compass.jar` file from `/out/artifacts` and paste it in `plugins` 
 
 ## Commands
 Commands in the plugin require arguments and are grouped by their usage.
+
 ### getCompass
 Can only be executed by **hutners**. Adds to the inventory _Manhunt Compass_ which is used to track runners.
 ```aidl
 /getCompass - gives a manhunt compass
 ```
 ### Manhunt
-A hub for the game. `start` gives every hunter _Manhunt Compass_ and start the game. `stop` ends manhunt game.
+Command that is resposible for the game. `start` gives every hunter _Manhunt Compass_ and start the game. `stop` ends manhunt game.
 ```aidl
 /manhunt start - starts manhunt game
 /mahunt stop - ends manhunt
@@ -33,6 +34,7 @@ Everything related to **runners**. Runners have to survive and kill ender dragon
 - `/runner remove <player>` - remove <player> from runners
 - `/runner clear` - remove all players from runners
 - `/runner list` - returns nicks of runners
+
 ##### In progress
 - [ ] Dragon death detection
 - [ ] Toggle compass in nether
