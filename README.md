@@ -10,18 +10,15 @@ Commands in the plugin require arguments and are grouped by their usage.
 
 ### getCompass
 Can only be executed by **hutners**. Adds to the inventory _Manhunt Compass_ which is used to track runners.
-```aidl
-/getCompass - gives a manhunt compass
-```
+- `/getCompass` - gives a manhunt compass
+
 ### Manhunt
 Command that is resposible for the game. `start` gives every hunter _Manhunt Compass_ and start the game. `stop` ends manhunt game.
-```aidl
-/manhunt start - starts manhunt game
-/mahunt stop - ends manhunt
-```
+- `/manhunt start` - starts manhunt game
+- `/mahunt stop` - ends manhunt
+
 ### Hunter
 Everything realted to **hunters**. Hunters have to kill all runners in order to win the game.
-
 - `/hunter` - add a player executing that command to hunters
 - `/hunter add <player>` - add <player> to hunters
 - `/hunter remove <player>` - remove <player> from hunters
