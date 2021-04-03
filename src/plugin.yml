@@ -18,17 +18,17 @@ commands:
     description: Everything related to hunters. They have to kill runner.
     usage: |
       /hunter - add a player executing that command to hunters
-      /hunter add <player> - add a <player> to hunters
-      /hunter remove <player> - remove a <player> from hunters
-      /hunter clear - remove all players from hunters
+      /hunter add <player> - add <player> to hunters
+      /hunter remove <player> - remove <player> from hunters
+      /hunter clear - remove all hunters
       /hunter list - returns nicks of hunters
   runner:
     description: Everything related to runners. They are haunted by hunters.
     usage: |
       /runner - add a player executing that command to runners
-      /runner add <player> - add a <player> to runners
-      /runner remove <player> - remove a <player> from runners
-      /runner clear - remove all players from runners
+      /runner add <player> - add <player> to runners
+      /runner remove <player> - remove <player> from runners
+      /runner clear - remove all runners
       /runner list - returns nicks of runners
   getCompass:
     description: Gives player a compass.
