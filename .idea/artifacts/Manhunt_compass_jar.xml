@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Manhunt_compass:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Manhunt_compass_jar</output-path>
+    <root id="archive" name="Manhunt_compass.jar">
+      <element id="module-output" name="Manhunt_compass" />
+    </root>
+  </artifact>
+</component>

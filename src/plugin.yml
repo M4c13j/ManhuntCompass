@@ -1,0 +1,49 @@
+name: ManhuntCompass
+version: 0.9
+author: Maciej Cuper
+authors: []
+description: Mincraft plugin that adds support for manhunt-like compass
+api-version: 1.16
+main: me.mcuper.compass.Main
+
+commands:
+  comm_name:
+    description: opisik
+    aliases: [ alias1 ]
+    usage: |
+      /<command> [player]
+      Example: /<command> - some description
+      Example: /<command> -
+  hunter:
+    description: Everything related to hunters. They have to kill runner.
+    usage: |
+      /hunter - add a player executing that command to hunters
+      /hunter add <player> - add a <player> to hunters
+      /hunter remove <player> - remove a <player> from hunters
+      /hunter clear - remove all players from hunters
+      /hunter list - returns nicks of hunters
+  runner:
+    description: Everything related to runners. They are haunted by hunters.
+    usage: |
+      /runner - add a player executing that command to runners
+      /runner add <player> - add a <player> to runners
+      /runner remove <player> - remove a <player> from runners
+      /runner clear - remove all players from runners
+      /runner list - returns nicks of runners
+  getCompass:
+    description: Gives player a compass.
+    usage: /getCompass
+  manhunt:
+    description: Command related to game.
+    usage: |
+      /manhunt start - starts manhunt game
+      /mahunt stop - ends manhunt
+  toggleNether:
+    description: Change whether compass should work in nether or no.
+    usage: /toggleNether
+  test:
+    description: Test might work actually
+    usage: /test
+  debugCompass:
+    description: Debug Compass.
+    usage: /debugCompass
