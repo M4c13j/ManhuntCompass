@@ -26,7 +26,7 @@ Everything realted to **hunters**. Hunters have to kill all runners in order to 
 - `/hunter list` - returns nicks of hunters
 ### Runner
 Everything related to **runners**. Runners have to survive and kill ender dragon but you can choose whatever objective you want.
--`/hunter` - add a player executing that command to runners
+- `/hunter` - add a player executing that command to runners
 - `/runner add <player>` - add <player> to runners
 - `/runner remove <player>` - remove <player> from runners
 - `/runner clear` - remove all players from runners
