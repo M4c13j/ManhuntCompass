@@ -29,27 +29,29 @@ public class eventHandler implements Listener {
         if (item != null && item.getType() == Material.COMPASS && plugin.hunters.contains(p.getUniqueId())) {
 
             Location pos = p.getLocation();
-            Location temp;
-            if (!plugin.runners.isEmpty()) {
-               // p.sendMessage("processing...");
-                    /*for (UUID ids : plugin.runners) {
-                        temp = plugin.getServer().getPlayer(ids).getLocation();
-                        p.sendMessage(plugin.getServer().getPlayer(ids).getName());
-                        if (p.getLocation() == pos) {
-                            pos = temp;
-                        } else {
-                            if (p.getLocation().distance(pos) > p.getLocation().distance(temp)) {
-                                pos = temp;
-                            }
-                        }
-                    }*/
-                temp = plugin.getServer().getPlayer(plugin.runners.stream().findFirst().get()).getLocation();
+            Location very_far = new Location( p.getWorld(), 100000000 , 100 , 10000000 );
+            Location temp = very_far;
 
-                p.sendMessage(ChatColor.GREEN + "Now pointing to the closest player!");
-                p.setCompassTarget(temp);
+            if( plugin.runners.isEmpty() ) {
+                p.sendMessage( ChatColor.BLUE+"Compass is pointing towards your last location!");
+                p.setCompassTarget( pos );
             } else {
-                p.sendMessage(ChatColor.GREEN + "Compass is pointing towards your last position!");
-                p.setCompassTarget(p.getLocation());
+                for( UUID id : plugin.runners ) {
+                    Player player = Bukkit.getPlayer(id);
+                    if( player.getLocation().distance(pos) <= pos.distance(temp) ) {
+                        temp = player.getLocation();
+                    }
+                }
+
+                //if something went wrong
+                if( temp == very_far ) {
+                    p.setCompassTarget( pos );
+                    p.sendMessage( ChatColor.BLUE+"Compass is pointing towards your last location!");
+                } else {
+                    //compass now points to the closest player
+                    p.setCompassTarget( temp );
+                    p.sendMessage(ChatColor.GREEN + "Now pointing to the closest runner!");
+                }
             }
 
         }

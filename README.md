@@ -9,7 +9,7 @@ Copy `Manhunt_compass.jar` file from `/out/artifacts` and paste it in `plugins` 
 Commands in the plugin require arguments and are grouped by their usage.
 
 ### getCompass
-Can only be executed by **hutners**. Adds to the inventory _Manhunt Compass_ which is used to track runners.
+Can only be executed by **hutners**. Adds to the inventory _Manhunt Compass_ which is used to track runners. Clicking RMB points compass to the closest **runner**.
 - `/getCompass` - gives a manhunt compass
 
 ### Manhunt
